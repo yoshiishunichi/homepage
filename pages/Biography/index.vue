@@ -1,5 +1,5 @@
 <template>
   <div class="bio-container container">
-    <p>bio</p>
+    <h4 class="page-title">Biography</h4>
   </div>
 </template>
