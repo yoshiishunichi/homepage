@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="main-container">
     <div>
       <Logo />
       <h1 class="title">ganja_tuber</h1>
@@ -29,14 +29,15 @@
 export default {}
 </script>
 
-<style>
-.container {
+<style lang="scss">
+.main-container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 75px;
 }
 
 .title {

@@ -1,10 +1,11 @@
 <template>
   <div>
+    <Header />
     <Nuxt />
   </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
