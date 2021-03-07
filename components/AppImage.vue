@@ -17,12 +17,12 @@ export default {
 a {
   display: block;
   width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 img {
   margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   display: block;
   width: 150px;
   border-radius: 15px;
