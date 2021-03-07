@@ -21,6 +21,10 @@ a {
   margin-right: auto;
 }
 
+a:hover {
+  opacity: 0.75;
+}
+
 img {
   margin-top: 50px;
   display: block;

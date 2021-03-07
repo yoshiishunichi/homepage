@@ -6,7 +6,7 @@
         <AppImage source="/images/DeadMan.png" link="/Products/DeadMan" />
       </li>
       <li class="apps-elem">
-        <AppImage source="/images/DeadMan.png" link="/Products/DeadMan" />
+        <AppImage source="/images/GanjaKey.png" link="/Products/GanjaKey" />
       </li>
       <li class="apps-elem">
         <AppImage source="/images/DeadMan.png" link="/Products/DeadMan" />
