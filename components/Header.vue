@@ -1,21 +1,21 @@
 <template>
   <div class="header-container">
     <div class="header-content">
-      <a class="name-link" href="/">
+      <nuxt-link class="name-link" to="/">
         <h3 class="name">Ganja_Tuber</h3>
-      </a>
+      </nuxt-link>
       <ul class="link-list">
         <li class="link-elem">
-          <a>Products</a>
+          <nuxt-link to="/Products">Products</nuxt-link>
         </li>
         <li class="link-elem">
-          <a>News</a>
+          <nuxt-link to="/News">News</nuxt-link>
         </li>
         <li class="link-elem">
-          <a>Biography</a>
+          <nuxt-link to="/Biography">Biography</nuxt-link>
         </li>
         <li class="link-elem">
-          <a>Twitter</a>
+          <nuxt-link to="/Twitter">Twitter</nuxt-link>
         </li>
       </ul>
     </div>
