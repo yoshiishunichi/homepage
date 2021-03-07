@@ -41,7 +41,15 @@ a:hover{
 .page-title{
   font-size: 20px;
   font-weight: bold;
+  display: block;
+  position:absolute;
+  top: 75px;
   width: 100%;
   color: rgb(11, 82, 153);
   background-color: #fff;
+  font-family:  "MS P Gothic",sans-serif;
+}
+
+ul{
+  list-style: none;
 }

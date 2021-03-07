@@ -77,12 +77,11 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
-  font-family: 'MakinasSquare';
+  font-family: 'MakinasSquare', sans-serif;
   user-select: none;
 }
 
 .link-list {
-  list-style: none;
   float: right;
   width: 500px;
   top: 0;
