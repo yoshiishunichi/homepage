@@ -4,6 +4,20 @@
       <a class="name-link" href="/">
         <h3 class="name">Ganja_Tuber</h3>
       </a>
+      <ul class="link-list">
+        <li class="link-elem">
+          <a>Products</a>
+        </li>
+        <li class="link-elem">
+          <a>News</a>
+        </li>
+        <li class="link-elem">
+          <a>Biography</a>
+        </li>
+        <li class="link-elem">
+          <a>Twitter</a>
+        </li>
+      </ul>
     </div>
     <div class="header-shadow"></div>
     <div></div>
@@ -50,5 +64,33 @@
   margin-bottom: 20px;
   color: #fff;
   font-family: 'MakinasSquare';
+  user-select: none;
+}
+
+.link-list {
+  list-style: none;
+  float: right;
+  width: 450px;
+  top: 0;
+  position: absolute;
+  right: 0;
+  height: 100%;
+}
+
+.link-elem {
+  font-family: 'Asap', sans-serif;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 64px;
+}
+
+.link-elem:hover {
+  color: black;
 }
 </style>

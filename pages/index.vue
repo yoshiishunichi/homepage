@@ -1,27 +1,6 @@
 <template>
   <div class="main-container">
-    <div>
-      <Logo />
-      <h1 class="title">ganja_tuber</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
+    <p>ほむぺじ</p>
   </div>
 </template>
 
@@ -29,7 +8,7 @@
 export default {}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .main-container {
   margin: 0 auto;
   min-height: 100vh;
