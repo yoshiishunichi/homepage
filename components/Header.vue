@@ -2,7 +2,7 @@
   <div class="header-container">
     <div class="header-content">
       <nuxt-link class="name-link" to="/">
-        <h3 class="name">Ganja_Tuber</h3>
+        <h3 class="name">Ganja Tuber</h3>
       </nuxt-link>
       <ul class="link-list">
         <li class="link-elem">
@@ -15,7 +15,20 @@
           <nuxt-link to="/Biography">Biography</nuxt-link>
         </li>
         <li class="link-elem">
-          <nuxt-link to="/Twitter">Twitter</nuxt-link>
+          <a
+            href="https://twitter.com/ganja_tuber"
+            target="_blank"
+            rel="noopener"
+            >Twitter</a
+          >
+        </li>
+        <li class="link-elem">
+          <a
+            href="https://github.com/yoshiishunichi"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
         </li>
       </ul>
     </div>
@@ -71,7 +84,7 @@
 .link-list {
   list-style: none;
   float: right;
-  width: 450px;
+  width: 500px;
   top: 0;
   position: absolute;
   right: 0;
@@ -79,12 +92,13 @@
 }
 
 .link-elem {
-  font-family: 'Asap', sans-serif;
+  font-family: 'MakinasFlat', sans-serif;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  width: 24%;
+  width: 19%;
+  letter-spacing: 0.5px;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
