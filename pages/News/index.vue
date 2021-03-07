@@ -1,3 +1,3 @@
 <template>
-  <div class="news-container">news</div>
+  <div class="news-container container">news</div>
 </template>

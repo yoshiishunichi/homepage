@@ -41,6 +41,7 @@
   left: 0;
   position: absolute;
   opacity: 1;
+  background: rgb(11, 82, 153);
 }
 
 .header-shadow {

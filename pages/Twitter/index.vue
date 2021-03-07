@@ -1,3 +1,3 @@
 <template>
-  <div class="twitter-container">twitter</div>
+  <div class="twitter-container container">twitter</div>
 </template>
