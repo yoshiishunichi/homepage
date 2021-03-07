@@ -26,7 +26,7 @@ a:hover {
 }
 
 img {
-  margin-top: 50px;
+  margin-top: 15px;
   display: block;
   width: 150px;
   border-radius: 15px;

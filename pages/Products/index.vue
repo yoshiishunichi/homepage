@@ -33,6 +33,7 @@
 <style lang="scss" scoped>
 .apps-list {
   width: 95%;
+  margin-top: 50px;
 }
 
 .apps-elem {
