@@ -45,6 +45,16 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      title: 'Products',
+    }
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 .apps-list {
   width: 95%;

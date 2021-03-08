@@ -9,3 +9,13 @@
     />
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: '3連キーボード図柄',
+    }
+  },
+}
+</script>

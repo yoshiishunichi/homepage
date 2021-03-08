@@ -11,3 +11,13 @@
     />
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: '容疑者画像メーカー',
+    }
+  },
+}
+</script>

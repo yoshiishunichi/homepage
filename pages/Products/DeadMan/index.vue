@@ -2,7 +2,7 @@
   <div class="products-container container">
     <h4 class="page-title">Products</h4>
     <AppSection
-      title="遺影画像メーカー"
+      title="遺影メーカー"
       description="遺影を作れるアプリです。"
       source="/images/DeadMan.png"
       :app="true"
@@ -11,3 +11,13 @@
     />
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: '遺影メーカー',
+    }
+  },
+}
+</script>

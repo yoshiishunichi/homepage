@@ -10,3 +10,13 @@
     />
   </div>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: '殺すぞ',
+    }
+  },
+}
+</script>
