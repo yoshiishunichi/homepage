@@ -1,12 +1,12 @@
 <template>
   <div class="products-container container">
     <h4 class="page-title">Products</h4>
-    <p>kill</p>
+    <AppSection
+      title="殺すぞ"
+      description="カラフルな殺害予告を作るサイトです"
+      source="/images/Kill.png"
+      :center="true"
+      link="https://yoshiishunichi.github.io/kill/"
+    />
   </div>
 </template>
-
-<style scoped>
-p {
-  margin-top: 50px;
-}
-</style>

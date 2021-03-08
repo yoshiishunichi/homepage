@@ -52,7 +52,7 @@ a:hover{
   font-weight: bold;
   display: block;
   position:absolute;
-  top: 75px;
+  top: 85px;
   width: 100vw;
   color: $back-color;
   background-color: #fff;
@@ -61,4 +61,10 @@ a:hover{
 
 ul{
   list-style: none;
+}
+
+.app-link:hover {
+  background: white;
+  color: $back-color;
+  border: 2px solid $back-color;
 }

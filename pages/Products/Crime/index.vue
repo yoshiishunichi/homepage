@@ -1,12 +1,13 @@
 <template>
   <div class="products-container container">
     <h4 class="page-title">Products</h4>
-    <p>容疑者</p>
+    <AppSection
+      title="容疑者画像メーカー"
+      description="容疑者風のコラ画像を作れるアプリです。<br>すごいバズって怖かったです。"
+      source="/images/Crime.png"
+      :app="true"
+      :center="true"
+      link="https://apps.apple.com/jp/app/%E5%AE%B9%E7%96%91%E8%80%85%E7%94%BB%E5%83%8F%EF%BE%92%EF%BD%B0%EF%BD%B6%EF%BD%B0/id1517358409"
+    />
   </div>
 </template>
-
-<style scoped>
-p {
-  margin-top: 50px;
-}
-</style>

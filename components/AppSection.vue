@@ -12,15 +12,17 @@
         >App Store</a
       >
       <a
-        v-else
+        v-if="!app && link"
         class="app-link back-color"
         :href="link"
         target="_blank"
         rel="noopener"
-        >リンク</a
+        >Link</a
       >
+      <a v-if="!link" class="back-color">配信停止中...</a>
     </div>
-    <p>{{ description }}</p>
+    <!-- eslint-disable vue/no-v-html -->
+    <p :class="{ center: center }" v-html="getDescription()" />
   </section>
 </template>
 
@@ -31,7 +33,15 @@ export default {
     description: { type: String, default: '', require: true },
     source: { type: String, default: '', require: false },
     app: { type: Boolean, default: false, require: false },
-    link: { type: String, default: '', require: true },
+    center: { type: Boolean, default: false, require: false },
+    link: { type: String, default: '', require: false },
+  },
+  methods: {
+    getDescription() {
+      const splitDescription = this.description.split('<br>')
+      const brDescription = splitDescription.join('<br />')
+      return brDescription
+    },
   },
 }
 </script>
@@ -58,7 +68,7 @@ p {
   font-size: 18px;
   color: black;
   width: 90%;
-  text-align: center;
+  text-align: left;
   margin: 15px auto;
 }
 
@@ -75,7 +85,7 @@ p {
   width: 150px;
 }
 
-.app-link {
+a {
   margin-top: 12px;
   font-weight: bold;
   font-size: 15px;
@@ -87,9 +97,7 @@ p {
   border-radius: 5px;
 }
 
-.app-link:hover {
-  background: white;
-  color: black;
-  border: 2px solid black;
+.center {
+  text-align: center;
 }
 </style>

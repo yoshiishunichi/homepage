@@ -6,7 +6,7 @@
         <AppImage source="/images/DeadMan.png" link="/Products/DeadMan" />
       </li>
       <li class="apps-elem">
-        <AppImage source="/images/GanjaKey.png" link="/Products/GanjaKey" />
+        <AppImage source="/images/3renKey.png" link="/Products/3renKey" />
       </li>
       <li class="apps-elem">
         <AppImage source="/images/Kill.png" link="/Products/Kill" />
@@ -54,14 +54,14 @@
 }
 
 .apps-elem {
-  width: 24.5%;
+  width: 25%;
   display: inline-block;
   padding: 0;
   margin: 0;
+  float: left;
 }
 
 .left1 {
   margin-left: 0 !important;
-  float: left;
 }
 </style>
