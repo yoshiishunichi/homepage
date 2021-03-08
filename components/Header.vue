@@ -69,9 +69,11 @@
 
 .name-link {
   text-decoration: none;
+  display: block;
 }
 
 .name {
+  width: auto;
   font-size: 23px;
   margin-left: 25px;
   margin-top: 20px;
@@ -79,6 +81,7 @@
   color: #fff;
   font-family: 'MakinasSquare', sans-serif;
   user-select: none;
+  float: left;
 }
 
 .link-list {
