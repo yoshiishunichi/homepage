@@ -35,6 +35,9 @@
           /></a>
         </li>
       </ul>
+      <button class="menu">
+        <font-awesome-icon :icon="['fas', 'bars']" />
+      </button>
     </div>
     <div class="header-shadow"></div>
     <div></div>
@@ -122,9 +125,32 @@
   display: inline-block;
 }
 
+.menu {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .text {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .link-list {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    float: right;
+    background: none;
+    color: white;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    line-height: 64px;
+    margin-right: 20px;
+    cursor: pointer;
   }
 }
 </style>
