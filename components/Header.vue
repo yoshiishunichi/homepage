@@ -20,7 +20,8 @@
             target="_blank"
             rel="noopener"
           >
-            <font-awesome-icon :icon="['fab', 'twitter']"
+            <p class="text">Twitter</p>
+            <font-awesome-icon class="icon" :icon="['fab', 'twitter']"
           /></a>
         </li>
         <li class="link-elem">
@@ -29,7 +30,8 @@
             target="_blank"
             rel="noopener"
           >
-            <font-awesome-icon :icon="['fab', 'github']"
+            <p class="text">GitHub</p>
+            <font-awesome-icon class="icon" :icon="['fab', 'github']"
           /></a>
         </li>
       </ul>
@@ -87,7 +89,8 @@
 
 .link-list {
   float: right;
-  width: 500px;
+  max-width: 500px;
+  width: auto;
   top: 0;
   position: absolute;
   right: 0;
@@ -101,15 +104,27 @@
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  width: 20%;
   letter-spacing: 0.5px;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0 15px;
   line-height: 64px;
 }
 
 .link-elem:hover {
   color: black;
+}
+
+.text {
+  display: inline-block;
+}
+
+.icon {
+  display: inline-block;
+}
+
+@media screen and (max-width: 900px) {
+  .text {
+    display: none;
+  }
 }
 </style>
