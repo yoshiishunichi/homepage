@@ -94,11 +94,12 @@
 
 .link-elem {
   font-family: 'MakinasFlat', sans-serif;
+  float: left;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  width: 19%;
+  width: 20%;
   letter-spacing: 0.5px;
   text-align: center;
   margin-top: 0;
