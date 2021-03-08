@@ -1,6 +1,6 @@
 <template>
   <div class="header-container">
-    <div class="header-content">
+    <div class="header-content back-color">
       <nuxt-link class="name-link" to="/">
         <h3 class="name">Ganja Tuber</h3>
       </nuxt-link>
@@ -54,7 +54,6 @@
   left: 0;
   position: absolute;
   opacity: 1;
-  background: rgb(11, 82, 153);
 }
 
 .header-shadow {
