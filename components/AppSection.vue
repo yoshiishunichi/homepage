@@ -48,10 +48,10 @@ export default {
 
 <style lang="scss" scoped>
 h5 {
-  font-size: 21px;
+  font-size: 24px;
   color: black;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 27px;
+  margin-bottom: 30px;
 }
 
 p {
