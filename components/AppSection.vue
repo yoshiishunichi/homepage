@@ -1,5 +1,5 @@
 <template>
-  <section class="app-section">
+  <section>
     <h5>{{ title }}</h5>
     <div class="image-wrapper">
       <img class="app-icon" :src="source" />
@@ -47,16 +47,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.app-section {
-  width: 95%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 70px;
-  background: white;
-  border-radius: 15px;
-}
-
 h5 {
   font-size: 21px;
   color: black;
