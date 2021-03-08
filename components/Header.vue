@@ -19,16 +19,18 @@
             href="https://twitter.com/ganja_tuber"
             target="_blank"
             rel="noopener"
-            >Twitter</a
           >
+            <font-awesome-icon :icon="['fab', 'twitter']"
+          /></a>
         </li>
         <li class="link-elem">
           <a
             href="https://github.com/yoshiishunichi"
             target="_blank"
             rel="noopener"
-            >GitHub</a
           >
+            <font-awesome-icon :icon="['fab', 'github']"
+          /></a>
         </li>
       </ul>
     </div>
