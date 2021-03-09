@@ -10,7 +10,7 @@
       <br />
       こんな感じの画像が作れます↓
     </p>
-    <img class="sample" src="/images/DradManSample.png" />
+    <img class="sample" src="/images/DeadManSample.png" />
     <a
       class="app-link back-color"
       href="https://apps.apple.com/jp/app/%E9%81%BA%E5%BD%B1%E7%94%BB%E5%83%8F%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC/id1556352136"
