@@ -2,19 +2,19 @@
   <div class="header-container">
     <div class="header-content back-color">
       <nuxt-link class="name-link" to="/">
-        <h3 class="name">Ganja Tuber</h3>
+        <h3 class="name makinas-s">Ganja Tuber</h3>
       </nuxt-link>
       <ul class="link-list">
-        <li class="link-elem">
+        <li class="link-elem makinas-f">
           <nuxt-link to="/Products">Products</nuxt-link>
         </li>
-        <li class="link-elem">
+        <li class="link-elem makinas-f">
           <nuxt-link to="/News">News</nuxt-link>
         </li>
-        <li class="link-elem">
+        <li class="link-elem makinas-f">
           <nuxt-link to="/Biography">Biography</nuxt-link>
         </li>
-        <li class="link-elem">
+        <li class="link-elem makinas-f">
           <a
             href="https://twitter.com/ganja_tuber"
             target="_blank"
@@ -24,7 +24,7 @@
             <font-awesome-icon class="icon" :icon="['fab', 'twitter']"
           /></a>
         </li>
-        <li class="link-elem">
+        <li class="link-elem makinas-f">
           <a
             href="https://github.com/yoshiishunichi"
             target="_blank"
@@ -85,7 +85,6 @@
   margin-top: 20px;
   margin-bottom: 20px;
   color: #fff;
-  font-family: 'MakinasSquare', sans-serif;
   user-select: none;
   float: left;
 }
@@ -101,7 +100,6 @@
 }
 
 .link-elem {
-  font-family: 'MakinasFlat', sans-serif;
   float: left;
   font-weight: bold;
   color: #fff;

@@ -27,6 +27,14 @@ html{
   padding: 0;
 }
 
+.makinas-s{
+  font-family: 'MakinasSquare', sans-serif;
+}
+
+.makinas-f{
+  font-family: 'MakinasFlat', sans-serif;
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -56,9 +64,29 @@ a:hover{
   position:absolute;
   top: 85px;
   width: 100vw;
+  height: 42px;
+  line-height: 42px;
   color: $back-color;
   background-color: #fff;
   font-family:  "MS P Gothic",sans-serif;
+}
+
+.top-theme{
+  margin-top: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  top: 85px;
+  width: 25vw;
+  min-width: 110px;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 0;
+  color: $back-color;
+  background-color: #fff;
+  font-family:  "MS P Gothic",sans-serif;
+  text-align: right;
+  padding-right: 15px;
 }
 
 section {
