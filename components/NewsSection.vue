@@ -1,7 +1,7 @@
 <template>
   <section>
     <p class="date">{{ date }}</p>
-    <h5>{{ title }}</h5>
+    <h5 class="section-title">{{ title }}</h5>
     <img v-if="source" :src="source" />
     <!-- eslint-disable vue/no-v-html -->
     <p class="desc" v-html="getDescription()" />
@@ -27,12 +27,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h5 {
-  font-size: 24px;
-  color: black;
-  margin-bottom: 30px;
-}
-
 .date {
   margin-bottom: 21px;
 }

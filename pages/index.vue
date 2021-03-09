@@ -6,6 +6,7 @@
       <h3 class="makinas-f">の</h3>
       <h2 class="makinas-f">ホームページ</h2>
       <h4 class="top-theme">New App</h4>
+      <NewAppSection />
     </div>
   </div>
 </template>

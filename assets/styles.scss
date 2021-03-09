@@ -72,13 +72,13 @@ a:hover{
 }
 
 .top-theme{
-  margin-top: 150px;
+  margin-top: 111px;
   font-size: 18px;
   font-weight: bold;
   display: block;
   top: 85px;
   width: 25vw;
-  min-width: 110px;
+  min-width: 132px;
   height: 42px;
   line-height: 42px;
   margin-left: 0;
@@ -86,7 +86,7 @@ a:hover{
   background-color: #fff;
   font-family:  "MS P Gothic",sans-serif;
   text-align: right;
-  padding-right: 15px;
+  padding-right: 12px;
 }
 
 section {
@@ -97,6 +97,14 @@ section {
   margin-top: 70px;
   background: white;
   border-radius: 15px;
+  overflow: hidden;
+}
+
+.section-title{
+  font-size: 24px;
+  color: black;
+  margin-top: 27px;
+  margin-bottom: 30px;
 }
 
 
@@ -104,8 +112,34 @@ ul{
   list-style: none;
 }
 
+.app-icon {
+  border-radius: 15px;
+  border: 2px solid #000;
+}
+
+.app-link{
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  color: white;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
 .app-link:hover {
   background: white;
   color: $back-color;
   border: 2px solid $back-color;
+}
+
+.newapp-link{
+  color: $back-color;
+  text-decoration: underline;
+}
+
+.newapp-link:hover{
+  opacity: 0.5;
 }

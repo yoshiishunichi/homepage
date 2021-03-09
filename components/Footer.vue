@@ -9,7 +9,7 @@ h6 {
   font-family: 'MS P Gothic', sans-serif;
   text-align: center;
   width: 100%;
-  margin-top: 60px;
-  margin-bottom: 20px;
+  margin-top: 120px;
+  margin-bottom: 40px;
 }
 </style>

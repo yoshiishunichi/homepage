@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h5>{{ title }}</h5>
+    <h5 class="section-title">{{ title }}</h5>
     <div class="image-wrapper">
       <img class="app-icon" :src="source" />
       <a
@@ -47,13 +47,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-h5 {
-  font-size: 24px;
-  color: black;
-  margin-top: 27px;
-  margin-bottom: 30px;
-}
-
 p {
   font-size: 18px;
   color: black;
@@ -73,18 +66,6 @@ p {
   border: 2px solid black;
   border-radius: 15px;
   width: 150px;
-}
-
-a {
-  margin-top: 12px;
-  font-weight: bold;
-  font-size: 15px;
-  display: block;
-  color: white;
-  width: 150px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 5px;
 }
 
 .center {
