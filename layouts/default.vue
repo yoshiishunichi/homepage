@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import loadingMixin from '@/components/loadingMixin'
+// import loadingMixin from '@/components/loadingMixin'
 
 export default {
-  mixins: [loadingMixin],
+  // mixins: [loadingMixin],
 }
 </script>
