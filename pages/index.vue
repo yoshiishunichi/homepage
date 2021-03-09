@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .top-content {
-  margin-top: 80px;
+  margin-top: 111px;
   height: auto;
   width: 100%;
 }
@@ -32,7 +32,7 @@ export default {
 h1 {
   color: white;
   font-size: 45px;
-  margin: 24px auto;
+  margin: 42px auto 24px auto;
 }
 
 h3 {
