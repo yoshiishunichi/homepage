@@ -37,7 +37,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-fontawesome'],
+  modules: ['nuxt-fontawesome', 'nuxt-webfontloader'],
 
   fontawesome: {
     imports: [
@@ -50,6 +50,12 @@ export default {
         icons: ['fas'],
       },
     ],
+  },
+
+  webfontloader: {
+    google: {
+      families: ['Asap:600'],
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

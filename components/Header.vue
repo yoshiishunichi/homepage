@@ -5,16 +5,16 @@
         <h3 class="name makinas-s">Ganja Tuber</h3>
       </nuxt-link>
       <ul class="link-list">
-        <li class="link-elem makinas-f">
+        <li class="link-elem Asap">
           <nuxt-link to="/Products">Products</nuxt-link>
         </li>
-        <li class="link-elem makinas-f">
+        <li class="link-elem Asap">
           <nuxt-link to="/News">News</nuxt-link>
         </li>
-        <li class="link-elem makinas-f">
+        <li class="link-elem Asap">
           <nuxt-link to="/Biography">Biography</nuxt-link>
         </li>
-        <li class="link-elem makinas-f">
+        <li class="link-elem Asap">
           <a
             href="https://twitter.com/ganja_tuber"
             target="_blank"
@@ -24,7 +24,7 @@
             <font-awesome-icon class="icon" :icon="['fab', 'twitter']"
           /></a>
         </li>
-        <li class="link-elem makinas-f">
+        <li class="link-elem Asap">
           <a
             href="https://github.com/yoshiishunichi"
             target="_blank"
@@ -101,7 +101,6 @@
 
 .link-elem {
   float: left;
-  font-weight: bold;
   color: #fff;
   cursor: pointer;
   display: inline-block;

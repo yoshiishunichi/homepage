@@ -19,12 +19,17 @@ html{
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "游ゴシック", YuGothic,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
 }
 
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.Asap{
+  font-family: 'Asap', sans-serif;
 }
 
 .makinas-s{
@@ -59,7 +64,6 @@ a:hover{
 
 .page-title{
   font-size: 20px;
-  font-weight: bold;
   display: block;
   position:absolute;
   top: 85px;
@@ -68,13 +72,12 @@ a:hover{
   line-height: 42px;
   color: $back-color;
   background-color: #fff;
-  font-family:  "MS P Gothic",sans-serif;
+  font-family:  "Asap",sans-serif;
 }
 
 .top-theme{
   margin-top: 111px;
   font-size: 18px;
-  font-weight: bold;
   display: block;
   top: 85px;
   width: 25vw;
@@ -84,7 +87,7 @@ a:hover{
   margin-left: 0;
   color: $back-color;
   background-color: #fff;
-  font-family:  "MS P Gothic",sans-serif;
+  font-family:  "Asap",sans-serif;
   text-align: right;
   padding-right: 12px;
 }
@@ -144,3 +147,4 @@ ul{
 .newapp-link:hover{
   opacity: 0.5;
 }
+
