@@ -36,11 +36,13 @@ h1 {
 }
 
 h3 {
+  font-size: 21px;
   color: white;
   margin: 12px auto;
 }
 
 h2 {
+  font-size: 24px;
   color: white;
 }
 </style>
