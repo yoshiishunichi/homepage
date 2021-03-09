@@ -9,10 +9,10 @@
           <nuxt-link to="/Products">Products</nuxt-link>
         </li>
         <li class="link-elem Asap">
-          <nuxt-link to="/News">News</nuxt-link>
+          <nuxt-link to="/Biography">Biography</nuxt-link>
         </li>
         <li class="link-elem Asap">
-          <nuxt-link to="/Biography">Biography</nuxt-link>
+          <nuxt-link to="/News">News</nuxt-link>
         </li>
         <li class="link-elem Asap">
           <a

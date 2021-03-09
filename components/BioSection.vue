@@ -1,8 +1,6 @@
 <template>
   <section>
-    <p class="date">{{ date }}</p>
     <h5 class="section-title">{{ title }}</h5>
-    <img v-if="source" :src="source" />
     <!-- eslint-disable vue/no-v-html -->
     <p class="desc" v-html="getDescription()" />
   </section>
@@ -12,7 +10,6 @@
 export default {
   props: {
     title: { type: String, default: '', require: true },
-    date: { type: String, default: '', require: true },
     source: { type: String, default: '', require: false },
     description: { type: String, default: '', require: true },
   },
@@ -27,15 +24,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.date {
-  margin-bottom: 21px;
-}
-
 .desc {
-  margin-bottom: 60px;
-}
-
-p {
+  margin-bottom: 48px;
   font-size: 18px;
   color: black;
   width: 90%;
