@@ -51,7 +51,7 @@
   top: 0;
   right: 0;
   position: fixed;
-  z-index: 100;
+  z-index: 90;
 }
 
 .header-content {
