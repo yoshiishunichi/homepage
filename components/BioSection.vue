@@ -3,6 +3,7 @@
     <h5 class="section-title">{{ title }}</h5>
     <!-- eslint-disable vue/no-v-html -->
     <p class="desc" v-html="getDescription()" />
+    <img src="/images/ganja_tuber.png" class="thum" />
   </section>
 </template>
 
@@ -24,6 +25,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+section {
+  position: relative;
+}
+
+.thum {
+  display: block;
+  width: 100%;
+}
+
 .desc {
   margin-bottom: 48px;
   font-size: 18px;
