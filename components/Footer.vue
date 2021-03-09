@@ -6,7 +6,7 @@
 h6 {
   font-size: 15px;
   color: white;
-  font-family: 'MS P Gothic', sans-serif;
+  font-family: 'Asap', sans-serif;
   text-align: center;
   width: 100%;
   margin-top: 120px;
