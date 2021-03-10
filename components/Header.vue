@@ -36,8 +36,12 @@
         </li>
       </ul>
       <button class="menu" @click="open()">
-        <font-awesome-icon v-if="opening" :icon="['fas', 'times']" />
-        <font-awesome-icon v-else :icon="['fas', 'bars']" />
+        <font-awesome-icon
+          v-if="opening"
+          :icon="['fas', 'times']"
+          class="icon"
+        />
+        <font-awesome-icon v-else :icon="['fas', 'bars']" class="icon" />
       </button>
     </div>
     <div class="header-shadow" :class="{ openingshadow: opening }"></div>
@@ -61,6 +65,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$opening-headercontainer-height: 500px;
+$opeing-header-height: 494px;
+
 .header-container {
   height: 70px;
   width: 100vw;
@@ -71,7 +78,7 @@ export default {
 }
 
 .openingcontainer {
-  height: 500px;
+  height: $opening-headercontainer-height;
 }
 
 .header-content {
@@ -84,7 +91,7 @@ export default {
 }
 
 .openingcontent {
-  height: 494px;
+  height: $opeing-header-height;
 }
 
 .header-shadow {
@@ -98,7 +105,7 @@ export default {
 }
 
 .openingshadow {
-  top: 494px;
+  top: $opeing-header-height;
 }
 
 .name-link {
@@ -130,7 +137,6 @@ export default {
 .link-elem {
   float: left;
   color: #fff;
-  cursor: pointer;
   display: inline-block;
   letter-spacing: 0.5px;
   text-align: center;
@@ -143,11 +149,12 @@ export default {
 }
 
 .text {
-  display: inline-block;
+  display: inline;
 }
 
 .icon {
   display: inline-block;
+  cursor: pointer;
 }
 
 .menu {
@@ -166,16 +173,15 @@ export default {
   }
 
   .menu {
-    display: block;
+    display: inline;
     float: right;
     background: none;
     color: white;
     font-size: 25px;
     border: none;
     outline: none;
-    line-height: 64px;
     margin-right: 20px;
-    cursor: pointer;
+    margin-top: 17.5px;
   }
 }
 </style>
