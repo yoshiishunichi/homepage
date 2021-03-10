@@ -1,6 +1,6 @@
 <template>
-  <div class="header-container">
-    <div class="header-content back-color">
+  <div class="header-container" :class="{ openingcontainer: opening }">
+    <div class="header-content back-color" :class="{ openingcontent: opening }">
       <nuxt-link class="name-link" to="/">
         <h3 class="name makinas-s">Ganja Tuber</h3>
       </nuxt-link>
@@ -35,14 +35,30 @@
           /></a>
         </li>
       </ul>
-      <button class="menu">
-        <font-awesome-icon :icon="['fas', 'bars']" />
+      <button class="menu" @click="open()">
+        <font-awesome-icon v-if="opening" :icon="['fas', 'times']" />
+        <font-awesome-icon v-else :icon="['fas', 'bars']" />
       </button>
     </div>
-    <div class="header-shadow"></div>
-    <div></div>
+    <div class="header-shadow" :class="{ openingshadow: opening }"></div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    const opening = false
+    return {
+      opening,
+    }
+  },
+  methods: {
+    open() {
+      this.opening = !this.opening
+    },
+  },
+}
+</script>
 
 <style lang="scss" scoped>
 .header-container {
@@ -54,6 +70,10 @@
   z-index: 90;
 }
 
+.openingcontainer {
+  height: 500px;
+}
+
 .header-content {
   height: 64px;
   width: 100vw;
@@ -61,6 +81,10 @@
   left: 0;
   position: absolute;
   opacity: 1;
+}
+
+.openingcontent {
+  height: 494px;
 }
 
 .header-shadow {
@@ -71,6 +95,10 @@
   top: 64px;
   left: 0;
   position: absolute;
+}
+
+.openingshadow {
+  top: 494px;
 }
 
 .name-link {
