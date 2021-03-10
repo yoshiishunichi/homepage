@@ -2,9 +2,7 @@
   <div class="main-container container">
     <h4 class="page-title">PageTop</h4>
     <div class="top-content">
-      <h1 class="makinas-s">Ganja Tuber</h1>
-      <h3 class="makinas-f">の</h3>
-      <h2 class="makinas-f">ホームページ</h2>
+      <img src="/images/top-page.png" class="top-img" />
       <h4 class="top-theme">New App</h4>
       <NewAppSection />
     </div>
@@ -23,6 +21,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.top-img {
+  width: 350px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .top-content {
   margin-top: 111px;
   height: auto;

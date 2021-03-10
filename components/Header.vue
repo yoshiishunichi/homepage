@@ -2,7 +2,7 @@
   <div class="header-container" :class="{ openingcontainer: opening }">
     <div class="header-content back-color" :class="{ openingcontent: opening }">
       <nuxt-link class="name-link" to="/">
-        <h3 class="name makinas-s" @click="close()">Ganja Tuber</h3>
+        <img class="name" src="/images/ganja_tuber.png" />
       </nuxt-link>
       <button class="menu" @click="open()">
         <font-awesome-icon
@@ -149,12 +149,11 @@ $opeing-header-height: 294px;
 }
 
 .name {
-  width: auto;
+  height: 40px;
   font-size: 23px;
   margin-left: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 12px;
   user-select: none;
   float: left;
 }

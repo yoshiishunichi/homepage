@@ -1,18 +1,8 @@
-@font-face {
-  font-family: 'MakinasSquare';
-  src: url('./font/Makinas-4-Square.otf') format("opentype");
-}
-
-@font-face {
-  font-family: 'MakinasFlat';
-  src: url('./font/Makinas-4-Flat.otf') format("opentype");
-}
+$back-color: rgb(11, 82, 153);
 
 .back-color{
-  background:rgb(11, 82, 153);
+  background: $back-color;
 }
-
-$back-color: rgb(11, 82, 153);
 
 html{
   background: $back-color;
@@ -31,14 +21,6 @@ html{
 
 .Asap{
   font-family: 'Asap', sans-serif;
-}
-
-.makinas-s{
-  font-family: 'MakinasSquare', sans-serif;
-}
-
-.makinas-f{
-  font-family: 'MakinasFlat', sans-serif;
 }
 
 a{

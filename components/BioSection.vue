@@ -3,7 +3,6 @@
     <h5 class="section-title">{{ title }}</h5>
     <!-- eslint-disable vue/no-v-html -->
     <p class="desc" v-html="getDescription()" />
-    <img src="/images/ganja_tuber.png" class="thum" />
   </section>
 </template>
 
@@ -11,7 +10,6 @@
 export default {
   props: {
     title: { type: String, default: '', require: true },
-    source: { type: String, default: '', require: false },
     description: { type: String, default: '', require: true },
   },
   methods: {
