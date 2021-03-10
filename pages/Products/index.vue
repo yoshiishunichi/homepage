@@ -71,6 +71,27 @@ export default {
   float: left;
 }
 
+@media screen and (max-width: 800px) {
+  .apps-elem {
+    width: 33.3%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .apps-elem {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .apps-elem {
+    width: 100%;
+    float: left;
+  }
+}
+
 .left1 {
   margin-left: 0 !important;
 }
