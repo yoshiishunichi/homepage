@@ -1,20 +1,17 @@
 <template>
-  <div v-if="loading" class="loading-page">
+  <div v-if="load" class="loading-page">
     <p>Loading...</p>
   </div>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    loading: false,
-  }),
+  data() {
+    return { load: true }
+  },
   methods: {
-    start() {
-      this.loading = true
-    },
-    finish() {
-      this.loading = false
+    loaded() {
+      this.load = false
     },
   },
 }

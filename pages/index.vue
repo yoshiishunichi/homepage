@@ -1,8 +1,12 @@
 <template>
   <div class="main-container container">
+    <div v-if="load">
+      <Loading />
+    </div>
     <h4 class="page-title">PageTop</h4>
     <div class="top-content">
-      <img src="/images/top-page.png" class="top-img" />
+      <img :src="topurl" class="top-img" />
+      <img :src="sourceurl" class="dummy" :load="loaded()" />
       <h4 class="top-theme">New App</h4>
       <NewAppSection />
     </div>
@@ -11,11 +15,24 @@
 
 <script>
 export default {
+  data() {
+    return {
+      topurl: '/images/top-page.png',
+      sourceurl: '/images/',
+      load: true,
+    }
+  },
   head() {
     return {
       title: 'ganja_tuberホームページ',
       titleTemplate: '',
     }
+  },
+  methods: {
+    loaded() {
+      console.log('loaded')
+      this.load = false
+    },
   },
 }
 </script>
@@ -48,5 +65,9 @@ h3 {
 h2 {
   font-size: 24px;
   color: white;
+}
+
+.dummy {
+  display: none;
 }
 </style>
