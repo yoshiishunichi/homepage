@@ -2,39 +2,8 @@
   <div class="header-container" :class="{ openingcontainer: opening }">
     <div class="header-content back-color" :class="{ openingcontent: opening }">
       <nuxt-link class="name-link" to="/">
-        <h3 class="name makinas-s">Ganja Tuber</h3>
+        <h3 class="name makinas-s" @click="close()">Ganja Tuber</h3>
       </nuxt-link>
-      <ul class="link-list">
-        <li class="link-elem Asap">
-          <nuxt-link to="/Products">Products</nuxt-link>
-        </li>
-        <li class="link-elem Asap">
-          <nuxt-link to="/Biography">Biography</nuxt-link>
-        </li>
-        <li class="link-elem Asap">
-          <nuxt-link to="/News">News</nuxt-link>
-        </li>
-        <li class="link-elem Asap">
-          <a
-            href="https://twitter.com/ganja_tuber"
-            target="_blank"
-            rel="noopener"
-          >
-            <p class="text">Twitter</p>
-            <font-awesome-icon class="icon" :icon="['fab', 'twitter']"
-          /></a>
-        </li>
-        <li class="link-elem Asap">
-          <a
-            href="https://github.com/yoshiishunichi"
-            target="_blank"
-            rel="noopener"
-          >
-            <p class="text">GitHub</p>
-            <font-awesome-icon class="icon" :icon="['fab', 'github']"
-          /></a>
-        </li>
-      </ul>
       <button class="menu" @click="open()">
         <font-awesome-icon
           v-if="opening"
@@ -43,6 +12,58 @@
         />
         <font-awesome-icon v-else :icon="['fas', 'bars']" class="icon" />
       </button>
+      <ul class="link-list" :class="{ openiglist: opening }">
+        <li
+          class="link-elem Asap"
+          :class="{ openigelem: opening }"
+          @click="close()"
+        >
+          <nuxt-link to="/Products">Products</nuxt-link>
+        </li>
+        <li
+          class="link-elem Asap"
+          :class="{ openigelem: opening }"
+          @click="close()"
+        >
+          <nuxt-link to="/Biography">Biography</nuxt-link>
+        </li>
+        <li
+          class="link-elem Asap"
+          :class="{ openigelem: opening }"
+          @click="close()"
+        >
+          <nuxt-link to="/News">News</nuxt-link>
+        </li>
+        <li
+          class="link-elem Asap"
+          :class="{ openigelem: opening }"
+          @click="close()"
+        >
+          <a
+            href="https://twitter.com/ganja_tuber"
+            target="_blank"
+            rel="noopener"
+          >
+            <p class="text" :class="{ openingtext: opening }">Twitter</p>
+            <font-awesome-icon class="icon" :icon="['fab', 'twitter']"
+          /></a>
+        </li>
+        <li
+          class="link-elem Asap"
+          :class="{ openigelem: opening }"
+          @click="close()"
+        >
+          <a
+            href="https://github.com/yoshiishunichi"
+            target="_blank"
+            rel="noopener"
+            @click="close()"
+          >
+            <p class="text" :class="{ openingtext: opening }">GitHub</p>
+            <font-awesome-icon class="icon" :icon="['fab', 'github']"
+          /></a>
+        </li>
+      </ul>
     </div>
     <div class="header-shadow" :class="{ openingshadow: opening }"></div>
   </div>
@@ -56,17 +77,31 @@ export default {
       opening,
     }
   },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.handleResize)
+  },
   methods: {
+    handleResize() {
+      this.close()
+    },
     open() {
       this.opening = !this.opening
+    },
+    close() {
+      if (this.opening) {
+        this.opening = false
+      }
     },
   },
 }
 </script>
 
 <style lang="scss" scoped>
-$opening-headercontainer-height: 500px;
-$opeing-header-height: 494px;
+$opening-headercontainer-height: 300px;
+$opeing-header-height: 294px;
 
 .header-container {
   height: 70px;
@@ -171,7 +206,6 @@ $opeing-header-height: 494px;
   .link-list {
     display: none;
   }
-
   .menu {
     display: inline;
     float: right;
@@ -181,7 +215,29 @@ $opeing-header-height: 494px;
     border: none;
     outline: none;
     margin-right: 20px;
-    margin-top: 17.5px;
+    position: relative;
+    top: 17.5px;
   }
+}
+
+.openigelem {
+  float: none;
+  display: block;
+  height: 20px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.openiglist {
+  margin-top: 70px;
+  display: block;
+  float: none;
+  width: 100vw;
+  position: relative;
+  max-width: none;
+}
+
+.openingtext {
+  display: inline;
 }
 </style>
