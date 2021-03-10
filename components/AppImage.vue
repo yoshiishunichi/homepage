@@ -15,7 +15,6 @@ export default {
 
 <style lang="scss" scoped>
 a {
-  display: block;
   width: 150px;
   margin-left: auto;
   margin-right: auto;

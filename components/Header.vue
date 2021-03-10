@@ -221,11 +221,16 @@ $opeing-header-height: 294px;
 }
 
 .openigelem {
-  float: none;
   display: block;
-  height: 20px;
-  width: 100px;
+  float: none;
   margin: 20px auto;
+  height: 20px;
+  width: 81px;
+  line-height: 20px;
+}
+
+.openigelem a {
+  display: inline-block;
 }
 
 .openiglist {
