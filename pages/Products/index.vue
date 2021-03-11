@@ -42,17 +42,15 @@
         <AppImage source="/images/Fukidashi.png" link="/Products/Fukidashi" />
       </li>
       <li class="apps-elem left1">
-        <AppImage
-          source="/images/Nisesatu.png"
-          link="/Products/Nisesatu"
-          :load="loaded()"
-        />
+        <AppImage source="/images/Nisesatu.png" link="/Products/Nisesatu" />
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
@@ -64,11 +62,15 @@ export default {
       title: 'Products',
     }
   },
-  methods: {
-    loaded() {
+  mounted() {
+    axios.get('https://ganja-tuber.netlify.app/images/').then((res) => {
+      console.log('res', res)
       this.loadComp()
-    },
+    })
+  },
+  methods: {
     loadComp() {
+      console.log('loadComp')
       if (this.load) {
         setTimeout(() => {
           this.load = false
