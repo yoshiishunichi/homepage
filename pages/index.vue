@@ -13,16 +13,32 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data() {
     return {
       load: true,
+      images: ['DeadMan', 'DeadManSample', 'top-page', 'ganja_tuber'],
     }
   },
   head() {
     return {
       title: 'ganja_tuberホームページ',
       titleTemplate: '',
+    }
+  },
+  mounted() {
+    let count = 0
+    for (let i = 0; i < this.images.length; i++) {
+      axios
+        .get(`https://ganja-tuber.netlify.app/images/${this.images[i]}.png`)
+        .then((res) => {
+          count++
+          if (count >= this.images.length) {
+            this.loadComp()
+          }
+        })
     }
   },
   methods: {

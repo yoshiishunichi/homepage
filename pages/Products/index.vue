@@ -93,7 +93,6 @@ export default {
   },
   methods: {
     loadComp() {
-      console.log('loadComp')
       if (this.load) {
         setTimeout(() => {
           this.load = false
