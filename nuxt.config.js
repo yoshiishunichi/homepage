@@ -71,7 +71,7 @@ export default {
     },
   },
   loadingIndicator: {
-    name: 'three-bounce',
+    name: 'wandering-cubes',
     color: 'white',
     background: 'rgb(11, 82, 153)',
   },
