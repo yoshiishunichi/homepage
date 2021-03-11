@@ -2,7 +2,7 @@
   <div class="header-container" :class="{ openingcontainer: opening }">
     <div class="header-content back-color" :class="{ openingcontent: opening }">
       <nuxt-link class="name-link" to="/">
-        <img class="name" src="/images/ganja_tuber.png" />
+        <img class="name" src="/images/ganja_tuber.png" @click="close()" />
       </nuxt-link>
       <button class="menu" @click="open()">
         <font-awesome-icon
