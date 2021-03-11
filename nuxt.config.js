@@ -71,7 +71,7 @@ export default {
     },
   },
   loadingIndicator: {
-    name: 'wandering-cubes',
+    name: 'cube-grid',
     color: 'white',
     background: 'rgb(11, 82, 153)',
   },
