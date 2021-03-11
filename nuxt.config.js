@@ -70,6 +70,9 @@ export default {
       })
     },
   },
-  loading: '~/components/DefaultLoading.vue',
-  loadingIndicator: '~/components/DefaultLoading.vue',
+  loadingIndicator: {
+    name: 'folding-cube',
+    color: 'white',
+    background: 'rgb(11, 82, 153)',
+  },
 }
