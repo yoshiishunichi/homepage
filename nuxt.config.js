@@ -71,7 +71,7 @@ export default {
     },
   },
   loadingIndicator: {
-    name: 'folding-cube',
+    name: 'three-bounce',
     color: 'white',
     background: 'rgb(11, 82, 153)',
   },
