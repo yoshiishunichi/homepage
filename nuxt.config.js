@@ -71,4 +71,5 @@ export default {
     },
   },
   loading: '~/components/DefaultLoading.vue',
+  loadingIndicator: '~/components/DefaultLoading.vue',
 }
