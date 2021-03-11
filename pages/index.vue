@@ -5,8 +5,7 @@
     </div>
     <h4 class="page-title">PageTop</h4>
     <div class="top-content">
-      <img :src="topurl" class="top-img" />
-      <img :src="sourceurl" class="dummy" :load="loaded()" />
+      <img src="/images/top-page.png" class="top-img" :load="loaded()" />
       <h4 class="top-theme">New App</h4>
       <NewAppSection />
     </div>
@@ -17,8 +16,6 @@
 export default {
   data() {
     return {
-      topurl: '/images/top-page.png',
-      sourceurl: '/images/',
       load: true,
     }
   },
@@ -30,8 +27,14 @@ export default {
   },
   methods: {
     loaded() {
-      console.log('loaded')
-      this.load = false
+      this.loadComp()
+    },
+    loadComp() {
+      if (this.load) {
+        setTimeout(() => {
+          this.load = false
+        }, 500)
+      }
     },
   },
 }

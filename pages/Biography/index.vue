@@ -1,6 +1,5 @@
 <template>
   <div class="bio-container container">
-    <Loading />
     <h4 class="page-title">Biography</h4>
     <BioSection
       title="Yohsii Shunichi"

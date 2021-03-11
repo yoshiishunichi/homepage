@@ -1,5 +1,8 @@
 <template>
   <div class="products-container container">
+    <div v-if="load">
+      <Loading />
+    </div>
     <h4 class="page-title">Products</h4>
     <ul class="apps-list">
       <li class="apps-elem">
@@ -39,7 +42,11 @@
         <AppImage source="/images/Fukidashi.png" link="/Products/Fukidashi" />
       </li>
       <li class="apps-elem left1">
-        <AppImage source="/images/Nisesatu.png" link="/Products/Nisesatu" />
+        <AppImage
+          source="/images/Nisesatu.png"
+          link="/Products/Nisesatu"
+          :load="loaded()"
+        />
       </li>
     </ul>
   </div>
@@ -47,10 +54,27 @@
 
 <script>
 export default {
+  data() {
+    return {
+      load: true,
+    }
+  },
   head() {
     return {
       title: 'Products',
     }
+  },
+  methods: {
+    loaded() {
+      this.loadComp()
+    },
+    loadComp() {
+      if (this.load) {
+        setTimeout(() => {
+          this.load = false
+        }, 500)
+      }
+    },
   },
 }
 </script>
