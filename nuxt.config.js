@@ -38,7 +38,7 @@ export default {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://ganja-tuber.netlify.app/images/top-page.png',
+        content: 'https://ganja-tuber.netlify.app/images/twitter-image.png',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
