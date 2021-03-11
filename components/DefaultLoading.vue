@@ -1,8 +1,26 @@
 <template>
-  <div>
+  <div v-if="loading" class="loading">
     <div class="loading-page">Loading...</div>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      loading: false,
+    }
+  },
+  methods: {
+    start() {
+      this.loading = true
+    },
+    finish() {
+      this.loading = false
+    },
+  },
+}
+</script>
 
 <style scoped>
 .loading-page {

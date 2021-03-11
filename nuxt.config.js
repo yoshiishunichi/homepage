@@ -70,4 +70,5 @@ export default {
       })
     },
   },
+  loading: '~/components/DefaultLoading.vue',
 }
