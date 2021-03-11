@@ -96,7 +96,7 @@ export default {
       if (this.load) {
         setTimeout(() => {
           this.load = false
-        }, 500)
+        }, 200)
       }
     },
   },

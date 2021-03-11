@@ -1,5 +1,8 @@
 <template>
   <section>
+    <div v-if="load">
+      <Loading />
+    </div>
     <h5 class="section-title">{{ title }}</h5>
     <div class="image-wrapper">
       <img class="app-icon" :src="source" />
@@ -27,6 +30,8 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   props: {
     title: { type: String, default: '', require: true },
@@ -36,11 +41,27 @@ export default {
     center: { type: Boolean, default: false, require: false },
     link: { type: String, default: '', require: false },
   },
+  data() {
+    return { load: true }
+  },
+  mounted() {
+    axios.get(`https://ganja-tuber.netlify.app${this.source}`).then((res) => {
+      this.loadComp()
+    })
+  },
   methods: {
     getDescription() {
       const splitDescription = this.description.split('<br>')
       const brDescription = splitDescription.join('<br />')
       return brDescription
+    },
+    loadComp() {
+      console.log('loaded')
+      if (this.load) {
+        setTimeout(() => {
+          this.load = false
+        }, 200)
+      }
     },
   },
 }
