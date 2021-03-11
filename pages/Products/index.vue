@@ -55,6 +55,22 @@ export default {
   data() {
     return {
       load: true,
+      images: [
+        'DeadMan',
+        '3renKey',
+        'Kill',
+        'Bomb',
+        'Mimikaki',
+        'Mimikaki',
+        'Dog',
+        'Crime',
+        'Koyaku',
+        'Buzz',
+        'VS',
+        'Gochi',
+        'Fukidashi',
+        'Nisesatu',
+      ],
     }
   },
   head() {
@@ -63,10 +79,17 @@ export default {
     }
   },
   mounted() {
-    axios.get('https://ganja-tuber.netlify.app/images/').then((res) => {
-      console.log('res', res)
-      this.loadComp()
-    })
+    let count = 0
+    for (let i = 0; i < this.images.length; i++) {
+      axios
+        .get(`https://ganja-tuber.netlify.app/images/${this.images[i]}`)
+        .then((res) => {
+          count++
+          if (count >= this.images.length) {
+            this.loadComp()
+          }
+        })
+    }
   },
   methods: {
     loadComp() {
