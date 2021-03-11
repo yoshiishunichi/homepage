@@ -32,7 +32,7 @@
 }
 
 .new-app-text {
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   width: 90%;
   margin: 30px auto 12px auto;
