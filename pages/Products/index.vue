@@ -82,7 +82,7 @@ export default {
     let count = 0
     for (let i = 0; i < this.images.length; i++) {
       axios
-        .get(`https://ganja-tuber.netlify.app/images/${this.images[i]}`)
+        .get(`https://ganja-tuber.netlify.app/images/${this.images[i]}.png`)
         .then((res) => {
           count++
           if (count >= this.images.length) {
