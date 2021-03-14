@@ -217,6 +217,12 @@ $opeing-header-height: 294px;
     position: relative;
     top: 17.5px;
   }
+
+  .name {
+    height: 30px;
+    margin-top: 17px;
+    margin-left: 20px;
+  }
 }
 
 .openigelem {
