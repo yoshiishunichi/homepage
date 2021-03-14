@@ -17,7 +17,6 @@ export default {
   },
   methods: {
     parentEvent() {
-      console.log('hey')
       this.$refs.header.close()
     },
   },
