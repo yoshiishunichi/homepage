@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="link">
-    <img :src="source" />
+    <img :src="source" @click="headerClose" />
   </nuxt-link>
 </template>
 
@@ -9,6 +9,11 @@ export default {
   props: {
     source: { type: String, default: '', require: true },
     link: { type: String, default: '', require: true },
+  },
+  methods: {
+    headerClose() {
+      this.$emit('close-event')
+    },
   },
 }
 </script>

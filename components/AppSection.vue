@@ -56,7 +56,6 @@ export default {
       return brDescription
     },
     loadComp() {
-      console.log('loaded')
       if (this.load) {
         setTimeout(() => {
           this.load = false
