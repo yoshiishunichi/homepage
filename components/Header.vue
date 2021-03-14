@@ -126,7 +126,7 @@ $opeing-header-height: 294px;
 }
 
 .openingcontent {
-  height: 224px;
+  height: $opeing-header-height;
 }
 
 .header-shadow {
@@ -243,6 +243,7 @@ $opeing-header-height: 294px;
   display: block;
   float: none;
   width: 100vw;
+  height: 224px;
   position: relative;
   max-width: none;
 }
