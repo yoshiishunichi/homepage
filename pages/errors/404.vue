@@ -4,6 +4,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  asyncData({ redirect }) {
+    return redirect('/')
+  },
+}
+</script>
+
 <style lang="scss" scoped>
 p {
   margin-top: 100px;
