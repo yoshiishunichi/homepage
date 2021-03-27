@@ -71,7 +71,12 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-fontawesome', 'nuxt-webfontloader', '@nuxtjs/sitemap'],
+  modules: [
+    'nuxt-fontawesome',
+    'nuxt-webfontloader',
+    '@nuxt/content',
+    '@nuxtjs/sitemap',
+  ],
 
   fontawesome: {
     imports: [
@@ -96,7 +101,39 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://ganja-tuber.netlify.app',
     exclude: ['/errors/404'],
-    routes: async () => {},
+    routes: async () => {
+      const array = [
+        {
+          // トップページ
+          url: '/',
+          changefreq: 'daily',
+          priority: 1,
+          lastmod: new Date(),
+        },
+        {
+          // Products
+          url: '/Products',
+          changefreq: 'daily',
+          priority: 1,
+          lastmod: new Date(),
+        },
+        {
+          // Biography
+          url: '/Biography',
+          changefreq: 'daily',
+          priority: 1,
+          lastmod: new Date(),
+        },
+        {
+          // News
+          url: '/News',
+          changefreq: 'daily',
+          priority: 1,
+          lastmod: new Date(),
+        },
+      ]
+      return array
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
