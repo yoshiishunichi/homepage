@@ -101,6 +101,7 @@ export default {
     path: '/sitemap.xml',
     hostname: 'https://ganja-tuber.netlify.app',
     exclude: ['/errors/404'],
+    // eslint-disable-next-line require-await
     routes: async () => {
       const array = [
         {
