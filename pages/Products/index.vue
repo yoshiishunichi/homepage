@@ -76,6 +76,13 @@ export default {
   head() {
     return {
       title: 'Products',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの作ったアプリ・サイトをまとめています。',
+        },
+      ],
     }
   },
   mounted() {

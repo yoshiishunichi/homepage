@@ -13,6 +13,13 @@ export default {
   head() {
     return {
       title: 'Biography',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberのプロフィールです。',
+        },
+      ],
     }
   },
 }

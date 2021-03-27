@@ -14,6 +14,13 @@ export default {
   head() {
     return {
       title: 'News',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの最新情報です。',
+        },
+      ],
     }
   },
 }
