@@ -71,7 +71,7 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ['nuxt-fontawesome', 'nuxt-webfontloader'],
+  modules: ['nuxt-fontawesome', 'nuxt-webfontloader', '@nuxtjs/sitemap'],
 
   fontawesome: {
     imports: [
@@ -90,6 +90,13 @@ export default {
     google: {
       families: ['Asap:600'],
     },
+  },
+
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://ganja-tuber.netlify.app',
+    exclude: ['/errors/404'],
+    routes: async () => {},
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
