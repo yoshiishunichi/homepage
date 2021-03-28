@@ -19,7 +19,7 @@ export default {
   data() {
     return {
       load: true,
-      images: ['DeadMan', 'DeadManSample', 'top-page', 'ganja_tuber'],
+      images: ['top-page', 'ganja_tuber', 'DeadMan', 'DeadManSample'],
     }
   },
   head() {
