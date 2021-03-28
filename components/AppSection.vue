@@ -22,7 +22,7 @@
         rel="noopener"
         >Link</a
       >
-      <a v-if="!link" class="back-color">配信停止中...</a>
+      <a v-if="!link" class="not-link back-color">配信停止中...</a>
     </div>
     <!-- eslint-disable vue/no-v-html -->
     <p :class="{ center: center }" v-html="getDescription()" />
@@ -90,5 +90,17 @@ p {
 
 .center {
   text-align: center;
+}
+
+.not-link {
+  margin-top: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  color: white;
+  width: 150px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
 }
 </style>
