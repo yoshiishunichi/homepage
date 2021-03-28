@@ -49,7 +49,7 @@ export default {
       if (this.load) {
         setTimeout(() => {
           this.load = false
-        }, 750)
+        }, 800)
       }
     },
   },
@@ -61,6 +61,7 @@ export default {
   width: 350px;
   max-width: 90%;
   margin: 0 auto;
+  user-select: none;
 }
 
 .top-content {
