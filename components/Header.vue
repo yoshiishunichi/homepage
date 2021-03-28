@@ -102,9 +102,11 @@ export default {
 <style lang="scss" scoped>
 $opening-headercontainer-height: 300px;
 $opeing-header-height: 294px;
+$closing-headercontainer-height: 70px;
+$closing-header-height: 64px;
 
 .header-container {
-  height: 70px;
+  height: $closing-headercontainer-height;
   width: 100vw;
   top: 0;
   right: 0;
@@ -117,7 +119,7 @@ $opeing-header-height: 294px;
 }
 
 .header-content {
-  height: 64px;
+  height: $closing-header-height;
   width: 100vw;
   top: 0;
   left: 0;
@@ -134,7 +136,7 @@ $opeing-header-height: 294px;
   width: 100vw;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
   opacity: 0.7;
-  top: 64px;
+  top: $closing-header-height;
   left: 0;
   position: absolute;
 }
@@ -150,7 +152,6 @@ $opeing-header-height: 294px;
 
 .name {
   height: 40px;
-  font-size: 23px;
   margin-left: 25px;
   margin-top: 12px;
   margin-bottom: 12px;
@@ -174,12 +175,19 @@ $opeing-header-height: 294px;
   display: inline-block;
   letter-spacing: 0.5px;
   text-align: center;
+  height: 64px;
   margin: 0 15px;
-  line-height: 64px;
 }
 
 .link-elem:hover {
   color: black;
+}
+
+.link-elem a {
+  font-size: 17px;
+  line-height: 17px;
+  display: inline-block;
+  margin-top: 23.5px;
 }
 
 .text {
