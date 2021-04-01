@@ -5,44 +5,8 @@
     </div>
     <h4 class="page-title">Products</h4>
     <ul class="apps-list">
-      <li class="apps-elem">
-        <AppImage source="/images/DeadMan.png" link="/Products/DeadMan" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/3renKey.png" link="/Products/3renKey" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Kill.png" link="/Products/Kill" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Bomb.png" link="/Products/Bomb" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Mimikaki.png" link="/Products/Mimikaki" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Dog.png" link="/Products/Dog" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Crime.png" link="/Products/Crime" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Koyaku.png" link="/Products/Koyaku" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Buzz.png" link="/Products/Buzz" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/VS.png" link="/Products/VS" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Gochi.png" link="/Products/Gochi" />
-      </li>
-      <li class="apps-elem">
-        <AppImage source="/images/Fukidashi.png" link="/Products/Fukidashi" />
-      </li>
-      <li class="apps-elem left1">
-        <AppImage source="/images/Nisesatu.png" link="/Products/Nisesatu" />
+      <li v-for="name in products" :key="name" class="apps-elem">
+        <AppImage :source="`/images/${name}.png`" :link="`/Products/${name}`" />
       </li>
     </ul>
   </div>
@@ -55,12 +19,11 @@ export default {
   data() {
     return {
       load: true,
-      images: [
+      products: [
         'DeadMan',
         '3renKey',
         'Kill',
         'Bomb',
-        'Mimikaki',
         'Mimikaki',
         'Dog',
         'Crime',
@@ -87,12 +50,12 @@ export default {
   },
   mounted() {
     let count = 0
-    for (let i = 0; i < this.images.length; i++) {
+    for (let i = 0; i < this.products.length; i++) {
       axios
-        .get(`https://ganja-tuber.netlify.app/images/${this.images[i]}.png`)
+        .get(`https://ganja-tuber.netlify.app/images/${this.products[i]}.png`)
         .then((res) => {
           count++
-          if (count >= this.images.length) {
+          if (count >= this.products.length) {
             this.loadComp()
           }
         })
@@ -145,9 +108,5 @@ export default {
     width: 100%;
     float: left;
   }
-}
-
-.left1 {
-  margin-left: 0 !important;
 }
 </style>
