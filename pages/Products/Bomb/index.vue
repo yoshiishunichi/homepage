@@ -16,6 +16,13 @@ export default {
   head() {
     return {
       title: '爆弾を解除するゲーム',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの作ったアプリ・サイトをまとめています。',
+        },
+      ],
     }
   },
 }

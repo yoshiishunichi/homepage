@@ -17,6 +17,13 @@ export default {
   head() {
     return {
       title: '遺影メーカー',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの作ったアプリ・サイトをまとめています。',
+        },
+      ],
     }
   },
 }

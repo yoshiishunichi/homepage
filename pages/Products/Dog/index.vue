@@ -17,6 +17,13 @@ export default {
   head() {
     return {
       title: '犬にエサをあげるアプリ',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの作ったアプリ・サイトをまとめています。',
+        },
+      ],
     }
   },
 }

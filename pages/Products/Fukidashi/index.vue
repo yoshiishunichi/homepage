@@ -17,6 +17,13 @@ export default {
   head() {
     return {
       title: 'フキダシター',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの作ったアプリ・サイトをまとめています。',
+        },
+      ],
     }
   },
 }

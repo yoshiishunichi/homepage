@@ -15,6 +15,13 @@ export default {
   head() {
     return {
       title: '3連キーボード図柄',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'ganja_tuberの作ったアプリ・サイトをまとめています。',
+        },
+      ],
     }
   },
 }
