@@ -1,16 +1,8 @@
 <template>
   <div class="main-container container">
-    <div v-if="load">
-      <Loading />
-    </div>
     <h4 class="page-title">PageTop</h4>
     <div class="top-content">
-      <img
-        src="/images/top-page.png"
-        class="top-img"
-        :load="loaded()"
-        decoding="async"
-      />
+      <img src="/images/top-page.png" class="top-img" decoding="async" />
       <h4 class="top-theme">New App</h4>
       <NewAppSection />
     </div>
@@ -18,45 +10,12 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
-  data() {
-    return {
-      load: true,
-      images: ['top-page', 'ganja_tuber', 'DeadMan', 'DeadManSample'],
-    }
-  },
   head() {
     return {
       title: 'ganja_tuberホームページ',
       titleTemplate: '',
     }
-  },
-  mounted() {
-    let count = 0
-    for (let i = 0; i < this.images.length; i++) {
-      axios
-        .get(`https://ganja-tuber.netlify.app/images/${this.images[i]}.png`)
-        .then((res) => {
-          count++
-          if (count >= this.images.length) {
-            this.loadComp()
-          }
-        })
-    }
-  },
-  methods: {
-    loaded() {
-      this.loadComp()
-    },
-    loadComp() {
-      if (this.load) {
-        setTimeout(() => {
-          this.load = false
-        }, 800)
-      }
-    },
   },
 }
 </script>

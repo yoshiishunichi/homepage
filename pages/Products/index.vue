@@ -1,8 +1,5 @@
 <template>
   <div class="products-container container">
-    <div v-if="load">
-      <Loading />
-    </div>
     <h4 class="page-title">Products</h4>
     <ul class="apps-list">
       <li v-for="name in products" :key="name" class="apps-elem">
@@ -13,8 +10,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
   data() {
     return {
@@ -47,28 +42,6 @@ export default {
         },
       ],
     }
-  },
-  mounted() {
-    let count = 0
-    for (let i = 0; i < this.products.length; i++) {
-      axios
-        .get(`https://ganja-tuber.netlify.app/images/${this.products[i]}.png`)
-        .then((res) => {
-          count++
-          if (count >= this.products.length) {
-            this.loadComp()
-          }
-        })
-    }
-  },
-  methods: {
-    loadComp() {
-      if (this.load) {
-        setTimeout(() => {
-          this.load = false
-        }, 200)
-      }
-    },
   },
 }
 </script>
