@@ -5,7 +5,7 @@
     </div>
     <h5 class="section-title">{{ title }}</h5>
     <div class="image-wrapper">
-      <img class="app-icon" :src="source" />
+      <img class="app-icon" :src="source" decoding="async" />
       <a
         v-if="app"
         class="app-link back-color"

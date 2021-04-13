@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="link">
-    <img :src="source" @click="headerClose" />
+    <img :src="source" decoding="async" @click="headerClose" />
   </nuxt-link>
 </template>
 

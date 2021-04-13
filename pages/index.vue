@@ -5,7 +5,12 @@
     </div>
     <h4 class="page-title">PageTop</h4>
     <div class="top-content">
-      <img src="/images/top-page.png" class="top-img" :load="loaded()" />
+      <img
+        src="/images/top-page.png"
+        class="top-img"
+        :load="loaded()"
+        decoding="async"
+      />
       <h4 class="top-theme">New App</h4>
       <NewAppSection />
     </div>

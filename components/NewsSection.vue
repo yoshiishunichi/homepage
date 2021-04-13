@@ -2,7 +2,7 @@
   <section>
     <p class="date">{{ date }}</p>
     <h5 class="section-title">{{ title }}</h5>
-    <img v-if="source" :src="source" />
+    <img v-if="source" :src="source" decoding="async" />
     <!-- eslint-disable vue/no-v-html -->
     <p class="desc" v-html="getDescription()" />
   </section>
