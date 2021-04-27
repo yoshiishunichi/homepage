@@ -3,7 +3,7 @@
     <h4 class="page-title">PageTop</h4>
     <div class="top-content">
       <img src="/images/top-page.png" class="top-img" decoding="async" />
-      <h4 class="top-theme">New App</h4>
+      <h4 class="top-theme color-back">NewApp</h4>
       <NewAppSection />
     </div>
   </div>
@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .top-img {
+  display: block;
   width: 350px;
   max-width: 90%;
   margin: 0 auto;
@@ -53,5 +54,21 @@ h2 {
 
 .dummy {
   display: none;
+}
+
+.top-theme {
+  margin-top: 135px;
+  font-size: 18px;
+  display: block;
+  top: 85px;
+  width: 100vw;
+  min-width: 132px;
+  height: 42px;
+  line-height: 42px;
+  margin-left: 0;
+  background-color: #fff;
+  font-family: 'Asap', sans-serif;
+  text-align: center;
+  padding-right: 12px;
 }
 </style>
