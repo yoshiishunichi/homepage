@@ -23,8 +23,8 @@ export default {
 <style lang="scss" scoped>
 .top-img {
   display: block;
-  width: 350px;
-  max-width: 90%;
+  width: 510px;
+  max-width: 80%;
   margin: 0 auto;
   user-select: none;
 }
