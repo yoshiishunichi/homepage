@@ -39,22 +39,6 @@ a:hover{
   color: black;
 }
 
-.description{
-  font-size: 18px;
-  line-height: 36px;
-  display: inline-block;
-  width: calc(96% - 282px);
-  text-align: left;
-  margin-left: 21px;
-  margin-bottom: 24px;
-  @media screen and (max-width: 600px) {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-  }
-}
-
 .container{
   margin-top: 75px;
   margin-left: auto;
@@ -115,7 +99,7 @@ ul{
 .app-icon {
   border-radius: 15px;
   border: 2px solid #000;
-  width: 240px;
+  width: 210px;
   display: block;
   margin-left: 21px;
   @media screen and (max-width: 600px) {
@@ -134,7 +118,7 @@ ul{
   height: 40px;
   line-height: 40px;
   border-radius: 5px;
-  max-width: 240px;
+  width: 210px;
   margin-top: 24px;
   margin-left: 21px;
   @media screen and (max-width: 600px) {
@@ -153,12 +137,18 @@ ul{
   line-height: 36px;
 }
 
-.newapp-link{
-  color: $back-color;
-  text-decoration: underline;
+.description{
+  font-size: 18px;
+  line-height: 36px;
+  display: inline-block;
+  width: calc(96% - 282px);
+  text-align: left;
+  margin-left: 21px;
+  margin-bottom: 24px;
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
 }
-
-.newapp-link:hover{
-  opacity: 0.5;
-}
-
