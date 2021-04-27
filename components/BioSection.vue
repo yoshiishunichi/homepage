@@ -2,7 +2,7 @@
   <section>
     <h5 class="section-title">{{ title }}</h5>
     <!-- eslint-disable vue/no-v-html -->
-    <p class="desc" v-html="getDescription()" />
+    <p class="description" v-html="getDescription()" />
   </section>
 </template>
 
@@ -32,14 +32,7 @@ section {
   width: 100%;
 }
 
-.desc {
-  margin-bottom: 48px;
-  font-size: 18px;
-  color: black;
+.description {
   width: 90%;
-  text-align: left;
-  margin-top: 27px;
-  margin-left: auto;
-  margin-right: auto;
 }
 </style>

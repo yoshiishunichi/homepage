@@ -4,7 +4,7 @@
     <h5 class="section-title">{{ title }}</h5>
     <img v-if="source" :src="source" decoding="async" />
     <!-- eslint-disable vue/no-v-html -->
-    <p class="desc" v-html="getDescription()" />
+    <p class="description" v-html="getDescription()" />
   </section>
 </template>
 
@@ -28,20 +28,16 @@ export default {
 
 <style lang="scss" scoped>
 .date {
-  margin-bottom: 21px;
-}
-
-.desc {
-  margin-bottom: 60px;
-}
-
-p {
-  font-size: 18px;
-  color: black;
-  width: 90%;
-  text-align: left;
   margin-top: 27px;
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 15px;
+  margin-left: 21px;
+}
+
+.section-title {
+  margin-top: 12px;
+}
+
+.description {
+  width: 90%;
 }
 </style>

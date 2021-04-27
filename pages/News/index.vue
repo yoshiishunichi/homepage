@@ -4,7 +4,7 @@
     <NewsSection
       title="ホームページリニューアル"
       date="2021/3/11"
-      description="Nuxt.jsを使ってganja_tuberのホームページをリニューアルしました。<br><br>がんばっておしゃれな感じになったのでよかったら見てください。<br><br>今後もがんばっていきますので何卒よろしくお願いします。<br><br>from ganja_tuber"
+      description="Nuxt.jsを使ってganja_tuberのホームページをリニューアルしました。<br>がんばっておしゃれな感じにリニューアルしたのでよかったら見てください。<br>今後もがんばっていきますので何卒よろしくお願いします。<br><br>from ganja_tuber"
     />
   </div>
 </template>
