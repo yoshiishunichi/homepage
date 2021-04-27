@@ -1,7 +1,7 @@
 <template>
   <section>
     <h5 class="section-title">{{ title }}</h5>
-    <div class="image-wrapper">
+    <div class="img-holder">
       <img class="app-icon" :src="source" decoding="async" />
       <a
         v-if="app"
@@ -19,10 +19,10 @@
         rel="noopener"
         >Link</a
       >
-      <a v-if="!link" class="not-link back-color">配信停止中...</a>
+      <p v-if="!link" class="not-link back-color">配信停止中...</p>
     </div>
     <!-- eslint-disable vue/no-v-html -->
-    <p :class="{ center: center }" v-html="getDescription()" />
+    <p class="description" v-html="getDescription()" />
   </section>
 </template>
 
@@ -33,7 +33,6 @@ export default {
     description: { type: String, default: '', require: true },
     source: { type: String, default: '', require: false },
     app: { type: Boolean, default: false, require: false },
-    center: { type: Boolean, default: false, require: false },
     link: { type: String, default: '', require: false },
   },
   methods: {
@@ -45,42 +44,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss" scoped>
-p {
-  font-size: 18px;
-  color: black;
-  width: 90%;
-  text-align: left;
-  margin: 15px auto;
-}
-
-.image-wrapper {
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.app-icon {
-  display: block;
-  border: 2px solid black;
-  border-radius: 15px;
-  width: 150px;
-}
-
-.center {
-  text-align: center;
-}
-
-.not-link {
-  margin-top: 12px;
-  font-weight: bold;
-  font-size: 15px;
-  display: block;
-  color: white;
-  width: 150px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 5px;
-}
-</style>

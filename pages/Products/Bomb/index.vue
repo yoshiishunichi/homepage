@@ -5,7 +5,6 @@
       title="爆弾を解除するゲーム"
       description="爆弾を解除するゲームです"
       source="/images/Bomb.png"
-      :center="true"
       link="https://yoshiishunichi.github.io/bakudan/"
     />
   </div>

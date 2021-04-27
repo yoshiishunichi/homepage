@@ -39,36 +39,4 @@ section {
   background-color: #fff;
   font-family: 'Asap', sans-serif;
 }
-
-.thumnail {
-  max-width: 240px;
-  display: block;
-  margin-left: 21px;
-  @media screen and (max-width: 600px) {
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-a {
-  display: block;
-  max-width: 240px;
-  margin-top: 24px;
-  margin-left: 21px;
-  @media screen and (max-width: 600px) {
-    width: 80%;
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.img-holder {
-  float: left;
-  margin-bottom: 24px;
-  @media screen and (max-width: 600px) {
-    width: 100%;
-    display: block;
-  }
-}
 </style>

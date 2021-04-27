@@ -5,7 +5,6 @@
       title="耳かきするゲーム"
       description="耳かきをするゲームです"
       source="/images/Mimikaki.png"
-      :center="true"
       link="https://yoshiishunichi.github.io/mimikaki/"
     />
   </div>
