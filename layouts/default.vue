@@ -61,6 +61,7 @@ export default {
 .button-leave-active {
   transition: opacity 0.5s;
 }
+
 .button-enter,
 .button-leave-to {
   opacity: 0;
@@ -76,7 +77,7 @@ export default {
   color: white;
   border-radius: 21px;
   cursor: pointer;
-  border: none;
-  box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.6);
+  border: 0.1px solid rgb(3, 55, 107);
+  box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.6);
 }
 </style>
