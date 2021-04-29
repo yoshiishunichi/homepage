@@ -80,4 +80,10 @@ export default {
   border: 0.1px solid rgb(3, 55, 107);
   box-shadow: 3px 8px 15px rgba(0, 0, 0, 0.6);
 }
+
+.top-icon {
+  font-size: 18px;
+  text-align: center;
+  vertical-align: middle;
+}
 </style>
