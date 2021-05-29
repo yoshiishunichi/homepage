@@ -20,7 +20,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: 'ganja_tuberのホームページです',
+        content: 'ganja_tuber(yoshii shunichi)のホームページです。',
       },
       {
         hid: 'twitter:card',
@@ -31,7 +31,7 @@ export default {
       {
         hid: 'og:description',
         name: 'og:description',
-        content: 'ganja_tuberのホームページです。',
+        content: 'ganja_tuber(yoshii shunichi)のホームページです。',
       },
       {
         hid: 'og:url',
