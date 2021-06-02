@@ -17,7 +17,7 @@
         />
         <font-awesome-icon v-else :icon="['fas', 'bars']" class="icon" />
       </button>
-      <ul class="link-list" :class="{ openiglist: opening }">
+      <ul class="link-list" :class="{ openiglist: listOpening }">
         <li
           class="link-elem Asap"
           :class="{ openigelem: opening }"
@@ -78,8 +78,10 @@
 export default {
   data() {
     const opening = false
+    const listOpening = false
     return {
       opening,
+      listOpening,
     }
   },
   mounted() {
@@ -93,10 +95,19 @@ export default {
       this.close()
     },
     open() {
-      this.opening = !this.opening
+      if (this.opening) {
+        this.listOpening = false
+        this.opening = false
+      } else {
+        this.opening = true
+        setTimeout(() => {
+          this.listOpening = true
+        }, 250)
+      }
     },
     close() {
       if (this.opening) {
+        this.listOpening = false
         this.opening = false
       }
     },
@@ -130,6 +141,7 @@ $closing-header-height: 64px;
   left: 0;
   position: absolute;
   opacity: 1;
+  transition: height 0.3s ease;
 }
 
 .openingcontent {
@@ -144,6 +156,7 @@ $closing-header-height: 64px;
   top: $closing-header-height;
   left: 0;
   position: absolute;
+  transition: top 0.3s ease;
 }
 
 .openingshadow {
