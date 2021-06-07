@@ -76,6 +76,7 @@ export default {
     'nuxt-webfontloader',
     '@nuxt/content',
     '@nuxtjs/sitemap',
+    'nuxt-lazy-load',
   ],
 
   fontawesome: {
