@@ -4,8 +4,8 @@
     <AppSection
       title="make-mosaic"
       description="画像にモザイクをかけるサイトです。<br>初めてAngularを使ってみました。<br>シンプルで良い出来なので、使ってみてください。"
-      source="/images/3renKey.png"
-      link="https://3ren-keyboard.netlify.app/"
+      source="/images/Mosaic.png"
+      link="https://make-mosaic.netlify.app/"
     />
   </div>
 </template>
