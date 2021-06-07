@@ -15,6 +15,7 @@ export default {
     return {
       load: true,
       products: [
+        'Mosaic',
         'Ghost',
         'DeadMan',
         '3renKey',

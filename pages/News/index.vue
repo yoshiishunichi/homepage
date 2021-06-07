@@ -18,6 +18,12 @@ export default {
   data() {
     const news = [
       {
+        title: 'make-mosaic',
+        date: '2021/6/7',
+        description:
+          'Angularを使って画像にモザイクをかけるサイトを公開しました。<br>シンプルなデザインで使いやすいのでよかったら使ってみてください。<br><br>from ganja_tuber',
+      },
+      {
         title: '心霊写真を作るアプリ',
         date: '2021/5/29',
         description:
