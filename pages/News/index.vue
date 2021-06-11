@@ -18,6 +18,12 @@ export default {
   data() {
     const news = [
       {
+        title: '全裸ツイッター部のホームページを作成',
+        date: '2021/6/11',
+        description:
+          '#全裸ツイッター部のホームページをAngularで作成しました。<br>皆さんも、ハッシュタグ #全裸ツイッター部 でツイートしてみてください。<br><br>from ganja_tuber',
+      },
+      {
         title: 'make-mosaic',
         date: '2021/6/7',
         description:
