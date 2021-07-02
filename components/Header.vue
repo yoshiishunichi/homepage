@@ -10,12 +10,9 @@
         />
       </nuxt-link>
       <button class="menu" @click="open()">
-        <font-awesome-icon
-          v-if="opening"
-          :icon="['fas', 'times']"
-          class="icon"
-        />
-        <font-awesome-icon v-else :icon="['fas', 'bars']" class="icon" />
+        <span class="span1" :class="{ slanting1: opening }"></span>
+        <span class="span2" :class="{ nondisp: opening }"></span>
+        <span class="span3" :class="{ slanting2: opening }"></span>
       </button>
       <ul class="link-list" :class="{ openiglist: listOpening }">
         <li
@@ -241,7 +238,10 @@ $closing-header-height: 64px;
     outline: none;
     margin-right: 20px;
     position: relative;
-    top: 17.5px;
+    top: 22.5px;
+    height: 20px;
+    width: 21px;
+    cursor: pointer;
   }
 
   .name {
@@ -276,5 +276,47 @@ $closing-header-height: 64px;
 
 .openingtext {
   display: inline;
+}
+
+.span1 {
+  display: block;
+  width: 21px;
+  height: 3px;
+  background: white;
+  z-index: 9999;
+  transition: all ease-in-out 0.2s;
+}
+
+.span2 {
+  margin-top: 5px;
+  display: block;
+  width: 21px;
+  height: 3px;
+  background: white;
+  z-index: 9999;
+  transition: all ease-in-out 0.2s;
+}
+
+.span3 {
+  margin-top: 5px;
+  display: block;
+  width: 21px;
+  height: 3px;
+  background: white;
+  z-index: 9999;
+  transition: all ease-in-out 0.2s;
+}
+
+.slanting1 {
+  transform: rotate(45deg);
+}
+
+.slanting2 {
+  transform: rotate(-45deg);
+  margin-top: -2.5px;
+}
+
+.nondisp {
+  display: none;
 }
 </style>
