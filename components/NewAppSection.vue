@@ -1,27 +1,23 @@
 <template>
   <div>
     <section>
-      <h5 class="section-title">make-mosaic</h5>
+      <h5 class="section-title">白州の値段を捏造するサイト</h5>
       <div class="img-holder">
         <img
           class="thumnail app-icon"
-          src="/images/Mosaic.png"
+          src="/images/HakushuPrice.png"
           decoding="async"
         />
         <a
           class="app-link back-color"
-          href="https://make-mosaic.netlify.app/"
+          href="https://hakushu-price-generator.herokuapp.com/"
           target="_blank"
           rel="noopener"
           >Link</a
         >
       </div>
       <p class="description">
-        画像にモザイクをかけるサイトです。
-        <br />
-        初めてAngularを使ってみました。
-        <br />
-        シンプルで良い出来なので、使ってみてください。
+        Pythonを使って白州18年の値段を自動で取得し、任意の年代の値段を捏造するwebアプリです。<br />初めて自分でバックエンドをいじってみました。
       </p>
     </section>
   </div>

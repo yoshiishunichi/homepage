@@ -15,6 +15,7 @@ export default {
     return {
       load: true,
       products: [
+        'HakushuPrice',
         'NakedTwitterClub',
         'Mosaic',
         'Ghost',

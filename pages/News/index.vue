@@ -18,10 +18,16 @@ export default {
   data() {
     const news = [
       {
+        title: '白州の値段を捏造するサイトを作成',
+        date: '2021/7/4',
+        description:
+          'Pythonを使って白州18年の値段を自動で取得し、任意の年代の値段を捏造するwebアプリです。<br>初めて自分でバックエンドをいじってみました。<br>好きな白州の年代を作ってツイートしてみてください。<br><br>from ganja_tuber',
+      },
+      {
         title: '全裸ツイッター部のホームページを作成',
         date: '2021/6/11',
         description:
-          '#全裸ツイッター部のホームページをAngularで作成しました。<br>皆さんも、ハッシュタグ #全裸ツイッター部 でツイートしてみてください。<br><br>from ganja_tuber',
+          '#全裸ツイッター部 のホームページをAngularで作成しました。<br>皆さんも、ハッシュタグ #全裸ツイッター部 でツイートしてみてください。<br><br>from ganja_tuber',
       },
       {
         title: 'make-mosaic',
