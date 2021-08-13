@@ -14,7 +14,7 @@
 export default {
   head() {
     return {
-      title: '耳かき',
+      title: '全裸ツイッター部',
       meta: [
         {
           hid: 'description',
