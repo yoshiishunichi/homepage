@@ -1,23 +1,24 @@
 <template>
   <div>
     <section>
-      <h5 class="section-title">白州の値段を捏造するサイト</h5>
+      <h5 class="section-title">UriBrella</h5>
       <div class="img-holder">
         <img
           class="thumnail app-icon"
-          src="/images/HakushuPrice.png"
+          src="/images/UriBrella.png"
           decoding="async"
         />
         <a
           class="app-link back-color"
-          href="https://hakushu-price-generator.herokuapp.com/"
+          href="https://uribrella-web.netlify.app/"
           target="_blank"
           rel="noopener"
           >Link</a
         >
       </div>
       <p class="description">
-        Pythonを使って白州18年の値段を自動で取得し、任意の年代の値段を捏造するwebアプリです。<br />初めて自分でバックエンドをいじってみました。
+        神戸大学のキャンパスの降水量を5分間隔でチェックできるアプリ。
+        <br />iOS版とブラウザ版があります。 <br />これまでの集大成的な作品。
       </p>
     </section>
   </div>

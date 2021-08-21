@@ -15,6 +15,7 @@ export default {
     return {
       load: true,
       products: [
+        'UriBrella',
         'HakushuPrice',
         'NakedTwitterClub',
         'Mosaic',

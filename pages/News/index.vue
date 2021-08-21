@@ -18,6 +18,12 @@ export default {
   data() {
     const news = [
       {
+        title: 'UriBrellaを作成',
+        date: '2021/7/4',
+        description:
+          '神戸大学のキャンパスの降水量を5分間隔でチェックできるアプリを作りました。<br>初めて自分でバックエンドをいじってみました。<br>これまでの集大成的なアプリになってるのでよかったら見てみてください。<br><br>from ganja_tuber',
+      },
+      {
         title: '白州の値段を捏造するサイトを作成',
         date: '2021/7/4',
         description:
